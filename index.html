@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment20</title>
+  </head>
+  <body> 
+      <script>
+          // first take input from user
+          var numb = prompt("Enter Positive Number to Get Factorial");
+
+          // take var fact
+          var fact = 1;
+
+          // factorial of 0 is always 1
+          if(numb==0){
+              console.log("The Factorial of Number is 1");
+          }
+
+          // factorial of negative value is not posssible
+          else if(numb<0){
+              console.log("The factorial of -ve number is Not possible");
+          }
+          // factorial of n = 1*2*3*4*5*.....*n
+
+          else{
+              for(var i=1; i<=numb; i++){
+                  fact=fact*i;
+              }
+              console.log("The factorial of number is" +   fact )
+          }
+
+          
+      </script>
+  </body>
+</html>
